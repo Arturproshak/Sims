@@ -91,7 +91,7 @@ class Human:
         print(f'Mess - {self.home.mess}')
         car_indexess = "Car indexess"
         print(f"{car_indexess:^50}", '\n')
-        print(f'Brand - {brands_of_car}')
+        print(f'Brand - {self.car.brand}')
         print(f'State - {self.car.drive}')
         # Home Work - Написать код, который выводит всю инфу о машине, т.е. бренд, кол бензина и тех ссотояние
     def is_alive(self):
@@ -119,7 +119,7 @@ class Human:
         if self.car is None:
             print('Buy the car')
             self.get_car()
-            self.brand()
+            self.car.brand()
         if self.work is None:
             print('Find the work')
             self.get_job()
